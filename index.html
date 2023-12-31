@@ -1,202 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Responsive CV using HTML and CSS</title>
-        <link rel="stylesheet" href="Resume.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://kit.fontawesome.com/175893d2ae.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <div class="left_Side">
-                <div class="ProfileText">
-                    <div class="ImageBox">
-                        <img src="image.jpg" alt="profile pic">
-                    </div>
-                    <h2>Dishant Kumar Yadav<br><span>IIIT Kottayam</span></h2>
-                </div>
-                <div class="contactinfo">
-                    <h3 class="title">Contact Info</h3>
-                    <ul>
-                        <li>
-                            <span class="icon"><i class="fas fa-phone-alt"></i></span>
-                            <span class="text"> +91 8683014674</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="far fa-envelope"></i></span>
-                            <span class="text">dishantyadav10s@gmail.com</span>
-                        </li><li>
-                            <span class="icon"><i class="fab fa-instagram"></i></span>
-                            <span class="text">_dishant_mhakhariya</span>
-                        </li><li>
-                            <span class="icon"><i class="fas fa-location-arrow"></i></span>
-                            <span class="text">Rewari, Haryana, India</span>
-                    </ul>
-                </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="open.css" />
+    <script>
+      function openUp() {
+        const $opentop = document.querySelector("#opentop");
+        const $top = document.querySelector("#top");
+        const $front = document.querySelector("#front");
+        const $back = document.querySelector("#back");
+        const $letter = document.querySelector("#letter");
+        const $button = document.querySelector("button");
 
-                <div class="contactinfo education">
-                    <h3 class="title">Education</h3>
-                    <ul>
-                        <li>
-                            <h5>2005-2006</h5>
-                            <h4>Class 1st to 2nd</h4>
-                            <h3>Army Public School</h3>
-                        </li>
-                        <li>
-                            <h5>2007-2011</h5>
-                            <h4>Class 2nd to 7th</h4>
-                            <h3>Kerala Public School</h3>
-                        </li>
-                        <li>
-                            <h5>2012-2019</h5>
-                            <h4>Class 8th to 12th</h4>
-                            <h3>Yaduvanshi Shiksha Niketan</h3>
-                            <h3><b>10 CGPA in 10th</b></h3>
-                            <h3><b>84 percent in 12th</b></h3>
-                        </li>
-                        <li>
-                            <h5>2020-2021</h5>
-                            <h4>JEE preperation</h4>
-                            <h3>Resonance, Kota</h3>
-                            <h3><b>96.7 Percentile in JEE Mains</b></h3>
-                        </li>
-                        <li>
-                            <h5>2021-2025</h5>
-                            <h4>Bachelor Degree in Computer Science</h4>
-                            <h3><b>IIIT Kottayam</b></h3>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contactinfo language">
-                    <h3 class="title">Languages</h3>
-                    <ul>
-                        <li>
-                            <span class="text">English</span>
-                            <span class="percent">
-                            <div style="width: 90%;"></div>
-                        </span>
-                        </li>
-                        <li>
-                            <span class="text">French</span>
-                            <span class="percent">
-                            <div style="width: 75%;"></div>
-                        </span>
-                        </li>
-                        <li>
-                            <span class="text">Spanish</span>
-                            <span class="percent">
-                            <div style="width: 45%;"></div>
-                        </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        $opentop.beginElement();
+        $top.style.zIndex = 2;
 
-            <div class="Right_Side">
-                <div class="about">
-                    <h2 class="title2">Who am I?</h2>
-                    <p>
-                        Hello, my name is Dishant Kumar Yadav and I am a computer science student at IIIT Kottayam. I come from a family with a
-                        strong military background as my father served in the Indian navy for 15 years. This has instilled in me a strong sense 
-                        of discipline and a drive to succeed.<br>
-                        I have always been interested in technology and computer science, and I have been working hard to gain the knowledge and 
-                        skills necessary to succeed in this field. I have taken courses in programming, database management, and data structures, 
-                        and I have also completed several projects on my own to develop my skills.<br>
-                        I am eager to put my knowledge and skills to use in a professional setting, and I believe that I would be an asset as an 
-                        intern. I am a fast learner and a hard worker, and I am always willing to go above and beyond to achieve my goals. I am 
-                        confident that I can bring a positive attitude, a strong work ethic, and a desire to succeed to any organization.<br>
-                        Thank you for considering me for an internship opportunity. I am excited to take the next step in my career and I 
-                        believe that I can make a valuable contribution to your organization.
-                    </p>
-                </div>
-                <div class="about">
-                    <h2 class="title2">Qualifications</h2>
-                    <div class="box">
-                        <div class="year_qualification"></div>
-                        <ul>
-                            <li>Completed My 10th in 2017</li>
-                            <li>Completed My 12th in 2019.</li> 
-                            <li>Got into IIIT Kottayam in the fall of 2021</li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                <div class="about">
-                    <h2 class="title2">Projects</h2>
-                    <div class="box">
-                        <div class="year_qualification"></div>
-                        <ul>
-                            <h4>Following are some of my projects. You can see the code or view the webpage directly</h4>                           
-                            <li>My first semester project,<a href="https://github.com/dishantMHAKHARIYA/satishmusic.github.io"> "A Music App"</a> which have a lot of implementaions of Javascript including media query of CSS. </li>
-                            <a href="https://dishantmhakhariya.github.io/satishmusic.github.io/">Music Player</a>
-                            <li><a href="https://github.com/dishantMHAKHARIYA/apps.github.io">Attendance app. </a>Once the Covid-19 lockdown ended, we came to the college and all the students faced a lot of difficulty to see and maintain a record of their attendance on the regular basis. So i did this project to solve this problem. But due to some inconvinience I wasn't able to implement this on a larger scale</li>                            
-                            <li><a href="https://github.com/dishantMHAKHARIYA/sarojgames.github.io">Random Number Game</a>My first sem's IT-Workshop assigment. It's a game which gives us 5 attemps to guess a number which is choosen randomly by pc and is in between 1-100.</li>
-                            <a href="https://dishantmhakhariya.github.io/sarojgames.github.io/">RANDOM number game</a>
-                            <li><a href="https://github.com/dishantMHAKHARIYA/quiz.github.io">A quiz app</a>. Whose JavaScript was really painfull</li>
-                            <a href="https://dishantmhakhariya.github.io/quiz.github.io/">QUIZ APP</a>
-                        </ul>
-                    </div>
-                </div>
-                <div class="contactinfo language1">
-                    <h3 class="title">My skills</h3>
-                    <ul>
-                        <li>
-                            <span class="text">HTML</span>
-                            <span class="percent">
-                            <div style="width: 98%;"></div>
-                        </span>
-                        </li>
-                        <li>
-                            <span class="text">CSS</span>
-                            <span class="percent">
-                            <div style="width: 80%;"></div>
-                        </span>
-                        </li>
-                        <li>
-                            <span class="text">JAVA</span>
-                            <span class="percent">
-                            <div style="width: 90%;"></div>
-                        </span>
-                        </li>
-                        <li>
-                            <span class="text">C++</span>
-                            <span class="percent">
-                            <div style="width: 87%;"></div>
-                        </span>
-                        </li>
-                        <li>
-                            <span class="text">C</span>
-                            <span class="percent">
-                            <div style="width: 75%;"></div>
-                        </span>
-                        </li>
-                        <li>
-                            <span class="text">Photoshop</span>
-                            <span class="percent">
-                            <div style="width: 82%;"></div>
-                        </span>
-                        </li>
-                        <li>
-                            <span class="text">Adobe XD</span>
-                            <span class="percent">
-                            <div style="width: 90%;"></div>
-                        </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="aboutinterest">
-                    <h2 class="title2">Interest</h2>
-                    <ul>
-                        <li><i class="fas fa-chess-knight"></i>Gaming</li>
-                        <li><i class="fas fa-microphone-alt"></i>Singing</li>
-                        <li><i class="fas fa-book-reader"></i>Reading Novels</li>
-                        <li><i class="fas fa-utensils"></i>Cooking</li>
-                        <li><i class="fas fa-dumbbell"></i>Gym</li>
-                    </ul>
-                </div>
-            </div>
-                
-    </body>
+        $top.classList.add("animate");
+        $front.classList.add("animate");
+        $back.classList.add("animate");
+        $button.classList.add("animate");
+        $letter.classList.add("animate");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="text">
+      <h1>Hey ! Listen this is for you ....</h1>
+    </div>
+    <div id="envelope">
+      <div id="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 300,100 300,300 0,300"
+            style="fill: #4a274a; stroke: none; stroke-width: 0"
+          />
+        </svg>
+      </div>
+      <div id="front">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100 300,300 0,300"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 3"
+          />
+        </svg>
+      </div>
+      <div id="top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 2"
+          >
+            <animate
+              id="opentop"
+              attributeName="points"
+              dur="0.5s"
+              fill="freeze"
+              begin="indefinite"
+              from="0,100 150,200 300,100"
+              to="0,100 150,0 300,100"
+            />
+          </polygon>
+        </svg>
+      </div>
+
+      <div id="letter">
+        <h1>For you <span>Muskan</span></h1>
+
+        <!-- <img src="https://i.postimg.cc/5yZQnDpb/ukraine-7424066-640.webp" />-->
+        <p>Hey,muskan sorry us din ke liye, par accha hua hum ab bhi baat kar rahe hain. Riya ne bataaya ki main 'formal' hoon! Tujhe bhi yahi lga but 5 saal baad baat hui thi toh ,btw call par tere notes sun'ne mai maza aaya. Baby pink still tera favorite hai, aur walk style bhi waisa hi hai! Happy New Year! Hope we talk more in 2024.
+
+Dr. Muskan Yadav"<br />
+          <br />
+          So with this I would wish you a very happy new year and want to know can we still talk in 2024. <br />
+          If You Accept
+          <a href="new.html">Click Here</a>
+        </p>
+      </div>
+      <button onclick="openUp()">Click Here</button>
+    </div>
+  </body>
 </html>
