@@ -1,96 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="open.css" />
-    <script>
-      function openUp() {
-        const $opentop = document.querySelector("#opentop");
-        const $top = document.querySelector("#top");
-        const $front = document.querySelector("#front");
-        const $back = document.querySelector("#back");
-        const $letter = document.querySelector("#letter");
-        const $button = document.querySelector("button");
-
-        $opentop.beginElement();
-        $top.style.zIndex = 2;
-
-        $top.classList.add("animate");
-        $front.classList.add("animate");
-        $back.classList.add("animate");
-        $button.classList.add("animate");
-        $letter.classList.add("animate");
-      }
-    </script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="text">
-      <h1>Hey ! Listen this is for you ....</h1>
-    </div>
-    <div id="envelope">
-      <div id="back">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          height="300"
-          width="300"
+    <div class="container">
+      <div>
+        <h1 class="header_text">Do you wanna go out with me?</h1>
+      </div>
+      <p>
+        <a href="https://www.instagram.com/untoldcoding/">@untoldcoding</a>
+      </p>
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
         >
-          <polygon
-            points="0,100 300,100 300,300 0,300"
-            style="fill: #4a274a; stroke: none; stroke-width: 0"
-          />
-        </svg>
-      </div>
-      <div id="front">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          height="300"
-          width="300"
-        >
-          <polygon
-            points="0,100 150,200 300,100 300,300 0,300"
-            style="fill: #2abad0; stroke: #ffffff; stroke-width: 3"
-          />
-        </svg>
-      </div>
-      <div id="top">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          height="300"
-          width="300"
-        >
-          <polygon
-            points="0,100 150,200 300,100"
-            style="fill: #2abad0; stroke: #ffffff; stroke-width: 2"
-          >
-            <animate
-              id="opentop"
-              attributeName="points"
-              dur="0.5s"
-              fill="freeze"
-              begin="indefinite"
-              from="0,100 150,200 300,100"
-              to="0,100 150,0 300,100"
-            />
-          </polygon>
-        </svg>
-      </div>
+          No
+        </button>
 
-      <div id="letter">
-        <h1>For you <span>Muskan</span></h1>
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
 
-        <!-- <img src="https://i.postimg.cc/5yZQnDpb/ukraine-7424066-640.webp" />-->
-        <p>Hey socha software engineer hu toh thoda creative hona chaiye instead of just simple message ,muskan sorry us din ke liye, par accha hua hum ab bhi baat kar rahe hain. Riya ne bataaya ki main 'formal' hoon! Tujhe bhi yahi lga but 5 saal baad baat hui thi toh ,btw ek baat bta du ki mujhe hamesha hi tujhse baat krna ache lgta tha school mai baat nhi hui because mujhe tab lgta tha ki hamesha mai saamne se bolunga toh I will look creep. So call par tere notes sun'ne mai maza aaya. Baby pink still tera favorite hai, aur walk style bhi waisa hi hai! Happy New Year! Hope we talk more in 2024.
-
-Dr. Muskan Yadav"<br />
-          <br />
-          If You Accept
-          <a href="new.html">Click Here</a>
-        </p>
+          function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
       </div>
-      <button onclick="openUp()">Click Here</button>
     </div>
   </body>
 </html>
