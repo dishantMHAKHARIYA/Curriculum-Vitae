@@ -6,11 +6,10 @@ body {
   background: #b784db;
 }
 .envelope {
-  
   position: relative;
   cursor: pointer;
-  
 }
+
 .back {
   position: relative;
   width: 250px;
@@ -65,16 +64,13 @@ body {
   transform: rotateX(160deg);
 }
 .letter {
-  width: 80%; /* Adjust the width of the letter */
-  height: 80%; /* Adjust the height of the letter */
   position: absolute;
-  top: 10%;
-  left: 10%;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  overflow-y: auto; /* Enable scrolling if content exceeds the height */
+  background: white;
+  width: 230px;
+  height: 180px;
+  top: 10px;
+  left: 10px;
+  transition: 0.2s;
 }
 .envelope:hover .letter {
   transform: translateY(-100px);
@@ -96,7 +92,6 @@ body {
   position: relative;
   top: -20px;
   left: 20px;
-  line-height: 1.5; /* Adjust the line height of the text */
 }
 
 /*---heart -----*/
@@ -141,7 +136,3 @@ body {
   right: -40px;
   border-radius: 50px;
 }
-
-
-
-
