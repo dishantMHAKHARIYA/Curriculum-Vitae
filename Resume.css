@@ -1,243 +1,165 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- font-family:'Poppins', sans-serif;
- font-family: 'Roboto Condensed', sans-serif;
+body {
+  font-style: Arial;
+  background: black;
 }
-body{
-    background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-.container
-{
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
-    background: #fff;
-    display: grid;
-    margin: 50px;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
-}
-.container .left_Side
-{
-    position: relative;
-    background: #003147;
-    padding: 40px;
-}
-.ProfileText
-{
- position: relative;
- display: flex;
- flex-direction: column;
- align-items: center;
- padding-bottom: 20px;
- border-bottom: 1px solid rgba(225, 225, 225, 0.2);
-}
-.ProfileText .ImageBox
-{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.ProfileText .ImageBox img
-{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-.ProfileText h2
-{
-color: #fff;
-font-size: 1.5em;
-margin-top: 20px;
-text-transform: uppercase;
-text-align: center;
-font-weight: 600;
-line-height: 1.4em;
-}
-.ProfileText h2 span
-{
-    font-size: 0.8em;
-    font-weight: 300;
-}
-.container .Right_Side
-{
-    position: relative;
-    background: #fff;
-    padding: 40px;
-}
-.contactinfo
-{
-    padding: 40px;
 
-}
-.title
-{
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 1px;
-    margin-bottom: 20px;
-}
-.contactinfo ul li
-{
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  overflow: hidden;
   position: relative;
-  list-style: none;
-  margin: 10px 0px;
-  cursor: pointer;
 }
-.contactinfo ul li .icon
-{
-    display: inline-block;
-    width: 30px;
-    font-size: 18px;
-    color: #03a9f4;
-}
-.contactinfo ul li span
-{
-    color: #fff;
-    font-weight: 300;
-    
-}
-.contactinfo.education li
-{
-     margin-bottom: 15px;
-}
-.contactinfo.education h5
-{
-    color: #03a9f4;
-    font-weight: 500;
-}
-.contactinfo.education h4:nth-child(2)
-{
-    color: #fff;
-    font-weight: 500;
-}
-.contactinfo.education h3
-{
-    color: #fff;
-    font-weight: 300;
-}
-.contactinfo.language .percent
-{
-  position: relative;
-  width: 100%;
-  height: 6px;
-  background: #081921;
-  display: block;
-  margin-top: 5px;
-}
-.contactinfo.language .percent div
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #03a9f4;
-}
-.about
-{
-    margin-bottom: 50px;
-}
-.about:last-child
-{
-    margin-bottom: 0;
-}
-.title2
-{
-    color: #003147;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-p{
-    color: #333;
-}
-.about .box .text h4
-{
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
-    align-items: center;
-}
-.skills .box h4
-{
-    text-transform: uppercase;
-    color: #848c99;
-    font-weight: 500;
 
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
 }
-.skills .box .percent
-{
-    position: relative;
-    width: 100%;
-    height: 10px;
-    background: #f0f0f0;
+
+.first-text {
+  font-size: 4.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  color: white;
 }
-.skills .box .percent div
-{
-    position:relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #03a9f4;
+
+.second-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 8.5rem;
+  opacity: 0;
+  animation-name: rightFadeInOut;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  color: #ccc;
 }
-.contactinfo.language1 span
-{
-    color: #838080;
-    font-weight: 300;
+
+.third-text {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  opacity: 0;
+  animation-name: topFadeOutVertical;
+  animation-delay: 7.5s;
+  animation-duration: 6s;
+  color: #a3ddf0;
+  white-space: nowrap;
 }
-.contactinfo.language1 .percent
-{
-  position: relative;
-  width: 100%;
-  height: 6px;
-  background: #081921;
-  display: block;
-  margin-top: 5px;
+
+.fourth-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #f0a3be;
+  animation-name: fadeInOut;
+  animation-delay: 8.5s;
+  animation-duration: 9s;
 }
-.contactinfo.language1 .percent div
-{
+
+.fifth-text {
+  font-size: 5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #f0eba3;
+  animation-name: bottomFadeOut;
+  animation-delay: 10s;
+  animation-duration: 9s;
+}
+
+@keyframes topFadeOut {
+  0% {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #03a9f4;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.contactinfo.language1 h3
-{
-    color: rgb(17, 1, 1);
-    font-weight: 300;
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.aboutinterest ul
-{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+
+@keyframes topFadeOutVertical {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.aboutinterest ul li
-{
-    list-style: none;
-    color: #333;
-    font-weight: 500;
-    margin: 10px 0;
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
 }
-.aboutinterest ul li .fas
-{
-    color: #03a9f4;
-    font-size: 18px;
-    width: 20px;
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
 }
