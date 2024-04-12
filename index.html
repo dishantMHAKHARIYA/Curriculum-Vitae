@@ -1,48 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>untoldcoding</title>
+    <link rel="stylesheet" href="Style3.css" />
   </head>
   <body>
-    <div class="container">
-      <div>
-        <h1 class="header_text">Do Prathistha wanna go out with me?</h1>
+    <div class="envelope">
+      <div class="back"></div>
+      <div class="letter">
+        <div class="heart"></div>
+        <div class="text">
+          <p>
+            I want to say <br />
+            many thinks but, <br />
+            i can't express so i made <br />
+            this for you
+          </p>
+          <a href="new.html">Click here</a>
+        </div>
       </div>
-      <div class="gif_container">
-        <img
-          src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif"
-          alt="Cute animated illustration"
-        />
-      </div>
-      <div class="buttons">
-        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
-        <button
-          class="btn"
-          id="noButton"
-          onmouseover="moveButton()"
-          onclick="moveButton()"
-        >
-          No
-        </button>
-
-        <script>
-          function nextPage() {
-            window.location.href = "yes.html";
-          }
-
-          function moveButton() {
-            var x =
-              Math.random() *
-              (window.innerWidth -
-                document.getElementById("noButton").offsetWidth);
-            var y =
-              Math.random() *
-              (window.innerHeight -
-                document.getElementById("noButton").offsetHeight);
-            document.getElementById("noButton").style.left = `${x}px`;
-            document.getElementById("noButton").style.top = `${y}px`;
-          }
-        </script>
+      <div class="front"></div>
+      <div class="top"></div>
+      <div class="shadow"></div>
+      <div class="text1">
+        <h2>Hey! Listen I Have Something For You</h2>
       </div>
     </div>
   </body>
