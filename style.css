@@ -6,16 +6,10 @@ body {
   background: #b784db;
 }
 .envelope {
-  width: 600px; /* Adjust the width of the envelope */
-  height: 400px; /* Adjust the height of the envelope */
+  
   position: relative;
   cursor: pointer;
-  margin: 100px auto;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background: #f9f9f9;
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  
 }
 .back {
   position: relative;
